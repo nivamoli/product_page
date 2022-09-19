@@ -28,7 +28,50 @@ body {
   font-size: 1.6rem; /* = 16px */
   line-height: 1.8;
   font-family: var(--font);
+  padding: 0 130px
 }
 
 
 /* Header */ 
+
+.header {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--lightGrayishBlue);
+  margin-bottom: 50px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.header-container-one,
+.header-container-two {
+  display: flex;
+}
+
+.nav-list__link {
+  text-decoration: none;
+  margin-right: 25px;
+  color: var(--dark-gray);
+}
+
+.nav-list__link:hover {
+  color: var(--orange);
+  text-decoration: underline;
+  transition: .4s;
+}
+
+.cart {
+  margin: auto;
+  margin-right: 30px;
+}
+
+.profile__image {
+  width: 40px;
+  height: 40px;
+}
