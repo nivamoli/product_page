@@ -31,6 +31,16 @@ body {
   padding: 0 130px
 }
 
+/* Utilidades */ 
+
+img {
+  max-width: 100%;
+}
+
+.product-image-radius {
+  border-radius: 20px;
+}
+
 
 /* Header */ 
 
@@ -74,4 +84,132 @@ body {
 .profile__image {
   width: 40px;
   height: 40px;
+}
+
+
+/* Main */ 
+
+.main {
+  display: flex;
+}
+
+.main-container-one,
+.main-container-two {
+  flex: 1;
+  padding: 10px 50px;
+}
+
+.main-product-images {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-image-thumbnail {
+  width: 80px;
+  height: 80px;
+}
+
+.main-container-two__title5 {
+  text-transform: uppercase;
+  color: var(--orange);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.main-container-two__title {
+  line-height: 40px;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+
+.main-container-two__pgraph,
+.price-discount {
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.price-container {
+  display: flex;
+}
+
+.price-container__pgraph {
+  display: block;
+  margin: 0;
+}
+
+.price-container__pgraph:nth-child(1) {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.price-container__pgraph:nth-child(2) {
+  margin: auto;
+  margin-left: 15px;
+  background-color: var(--paleOrange);
+  padding: 0 7px;
+  color: var(--orange);
+  border-radius: 5px;
+}
+
+.price-discount {
+  margin-top: 0;
+  text-decoration: line-through;
+  color: var(--grayishBlue);
+}
+
+.form {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.form p {
+  display: block;
+  text-align: center;
+}
+
+.form-pgraph {
+  width: 130px;
+  display: inline-block;
+  margin-right: 30px;
+  background-color: var(--lightGrayishBlue);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-pgraph__image:nth-child(1) {
+  margin-right: 30px;
+  margin-bottom: 3px;
+}
+
+.form-pgraph__image:nth-child(2) {
+  margin-left: 30px;
+}
+
+.form-button {
+  width: 70%;
+  padding: 10px 0 10px 0;
+  border-color: var(--orange);
+  border-radius: 10px;
+  color: var(--white);
+  background-color: var(--orange);
+  outline-color: var(--orange);
+}
+
+.form-button:hover {
+  color: var(--black);
+  background-color: var(--paleOrange);
+  border-color: var(--paleOrange);
+  transition: .4s;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 12px;
+}
+
+.button-cart-image {
+  height: 12px;
+  margin-right: 10px;
 }
